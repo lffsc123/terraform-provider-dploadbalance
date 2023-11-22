@@ -41,7 +41,7 @@ type AdxSlbMonitorParameter struct {
 }
 
 func (r *AdxSlbMonitorResource) Metadata(ctx context.Context, req resource.MetadataRequest, resp *resource.MetadataResponse) {
-	resp.TypeName = "dpsc_AdxSlbMonitor"
+	resp.TypeName = "loadbalance_AdxSlbMonitor"
 }
 
 func (r *AdxSlbMonitorResource) Schema(ctx context.Context, req resource.SchemaRequest, resp *resource.SchemaResponse) {

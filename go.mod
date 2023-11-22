@@ -1,4 +1,4 @@
-module terraform-provider-dpsc
+module terraform-provider-loadbalance
 
 go 1.19
 

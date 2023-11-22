@@ -50,7 +50,7 @@ type VirtualServiceParameter struct {
 }
 
 func (r *VirtualServiceResource) Metadata(ctx context.Context, req resource.MetadataRequest, resp *resource.MetadataResponse) {
-	resp.TypeName = "dpsc_VirtualService"
+	resp.TypeName = "loadbalance_VirtualService"
 }
 
 func (r *VirtualServiceResource) Schema(ctx context.Context, req resource.SchemaRequest, resp *resource.SchemaResponse) {

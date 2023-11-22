@@ -56,7 +56,7 @@ type RealServiceParameter struct {
 }
 
 func (r *RealServiceResource) Metadata(ctx context.Context, req resource.MetadataRequest, resp *resource.MetadataResponse) {
-	resp.TypeName = "dpsc_RealService"
+	resp.TypeName = "loadbalance_RealService"
 }
 
 func (r *RealServiceResource) Schema(ctx context.Context, req resource.SchemaRequest, resp *resource.SchemaResponse) {

@@ -61,7 +61,7 @@ type SessionKeepParameter struct {
 }
 
 func (r *SessionKeepResource) Metadata(ctx context.Context, req resource.MetadataRequest, resp *resource.MetadataResponse) {
-	resp.TypeName = "dpsc_SessionKeep"
+	resp.TypeName = "loadbalance_SessionKeep"
 }
 
 func (r *SessionKeepResource) Schema(ctx context.Context, req resource.SchemaRequest, resp *resource.SchemaResponse) {
