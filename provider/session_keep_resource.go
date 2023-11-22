@@ -191,7 +191,7 @@ func (r *SessionKeepResource) Read(ctx context.Context, req resource.ReadRequest
 	if resp.Diagnostics.HasError() {
 		return
 	}
-	tflog.Info(ctx, " read Start")
+	tflog.Info(ctx, " read Start ")
 	// sendToweb_SessionKeepRequest(ctx,"POST", r.client, data.Rsinfo)
 	resp.Diagnostics.Append(resp.State.Set(ctx, &data)...)
 }
