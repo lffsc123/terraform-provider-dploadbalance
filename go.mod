@@ -1,4 +1,4 @@
-module terraform-provider-loadbalance
+module terraform-provider-dploadbalance
 
 go 1.19
 

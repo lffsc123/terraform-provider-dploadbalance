@@ -1,20 +1,20 @@
 terraform {
  required_providers {
-  loadbalance={
-     source = "registry.terraform.io/lffsc123/loadbalance"
+  dploadbalance={
+     source = "registry.terraform.io/lffsc123/dploadbalance"
      version = "1.2.37"
    } 
  }
  }
 
-provider "loadbalance" {
+provider "dploadbalance" {
   address="http://localhost:"
   port="8080"
   username="test"
   password="jsepc123!"
 }
 
-resource "loadbalance_RealServiceList" "cs2" {
+resource "dploadbalance_RealServiceList" "cs2" {
  poollist={
   name="string__*"
   monitor="string" // 健康监测
@@ -23,7 +23,7 @@ resource "loadbalance_RealServiceList" "cs2" {
  }
 }
 
-resource "loadbalance_AddrPoolList" "cs" {
+resource "dploadbalance_AddrPoolList" "cs" {
 addrpoollist={
     name="string__*"
     ip_start="string__*"
@@ -34,7 +34,7 @@ addrpoollist={
 } 
 }
 
-resource "loadbalance_VirtualService" "cs" {
+resource "dploadbalance_VirtualService" "cs" {
     virtualservice={
       name ="string__*"
       mode ="string__*"
@@ -51,7 +51,7 @@ resource "loadbalance_VirtualService" "cs" {
   }
 }
 
-resource "loadbalance-TargetNat" "dpcs" {
+resource "dploadbalance-TargetNat" "dpcs" {
   targetnat={
     name="string__*"
     ip_start="string__*"
@@ -62,7 +62,7 @@ resource "loadbalance-TargetNat" "dpcs" {
   }
 }
 
-resource "loadbalance-SourceNat" "dpcs" {
+resource "dploadbalance-SourceNat" "dpcs" {
   sourcenat={
     name="string__*"
     ip_start="string__*"
@@ -74,7 +74,7 @@ resource "loadbalance-SourceNat" "dpcs" {
 }
 
 // 会话保持
-resource "loadbalance-SessionKeep" "dpcs" {
+resource "dploadbalance-SessionKeep" "dpcs" {
   sessionkeep={
     // 1）必须配置。
     // 2）会话保持策略名称。
@@ -90,7 +90,7 @@ resource "loadbalance-SessionKeep" "dpcs" {
 }
 
 // 健康监测
-resource "loadbalance-AdxSlbMonitor" "dpcs" {
+resource "dploadbalance-AdxSlbMonitor" "dpcs" {
   monitorinfo={
     // 1）必须配置
     // 2）新建健康监测的名称

@@ -1,3 +1,3 @@
- resource "loadbalance_example" "cs" {
+ resource "dploadbalance_example" "cs" {
   uuid_count="4"
 }

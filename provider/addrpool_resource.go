@@ -44,7 +44,7 @@ type AddrPoolParameter struct {
 }
 
 func (r *AddrPoolResource) Metadata(ctx context.Context, req resource.MetadataRequest, resp *resource.MetadataResponse) {
-	resp.TypeName = "loadbalance_AddrPoolList"
+	resp.TypeName = "dploadbalance_AddrPoolList"
 }
 
 func (r *AddrPoolResource) Schema(ctx context.Context, req resource.SchemaRequest, resp *resource.SchemaResponse) {
