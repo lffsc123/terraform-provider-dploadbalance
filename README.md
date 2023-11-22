@@ -5,7 +5,7 @@ _This template repository is built on the [Terraform Plugin Framework](https://g
 This repository is a *template* for a [Terraform](https://www.terraform.io) provider. It is intended as a starting point for creating Terraform providers, containing:
 
 - A resource and a data source (`internal/provider/`),
-- Examples (`examples/`) and generated documentation (`docs/`),
+- Examples (`examples/`) and generated  documentation (`docs/`),
 - Miscellaneous meta files.
 
 These files contain boilerplate code  that you will need to edit to create your own Terraform provider. Tutorials for creating Terraform providers can be found on the [HashiCorp Learn](https://learn.hashicorp.com/collections/terraform/providers-plugin-framework) platform. _Terraform Plugin Framework specific guides are titled accordingly._
